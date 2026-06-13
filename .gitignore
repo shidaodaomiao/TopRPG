@@ -73,3 +73,9 @@ Plugins/**/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+# AI / IDE local configs
+.claude/
+.codegraph/
+.reasonix/
+.idea/
