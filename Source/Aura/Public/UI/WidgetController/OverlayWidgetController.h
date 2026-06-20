@@ -5,10 +5,13 @@
 #include "CoreMinimal.h"
 #include "AuraWidgetController.h"
 #include "GameplayTagContainer.h"
+#include "Engine/DataTable.h"
+#include "Templates/SubclassOf.h"
 #include "OverlayWidgetController.generated.h"
 
 
 class UAuraUserWidget;
+class UTexture2D;
 struct FOnAttributeChangeData;
 
 USTRUCT(BlueprintType)
@@ -27,13 +30,13 @@ struct FUIWidgetRow : public FTableRowBase
 	
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 	UTexture2D* Image = nullptr;
-	
 }; 
 
 
 //自定义委托(动态多播委托)
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnAttributeChangedSignature, float, NewValue);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FMessageWidgetRowSignature, FUIWidgetRow, Row);
+
 
 
 
