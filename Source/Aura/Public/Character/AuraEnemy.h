@@ -30,5 +30,7 @@ public:
 	virtual void HighlightActor() override;
 	virtual void UnHighlightActor() override;
 	
-
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Character Class Defaults")
+	int32 Level = 1;
+	
 };

@@ -104,6 +104,7 @@ public:
 	*  Secondary Attributes
 	*/
 	
+	//护甲
 	UPROPERTY(BlueprintReadOnly, ReplicatedUsing = OnRep_Armor, Category = "Secondary Attributes")
 	FGameplayAttributeData Armor;
 	ATTRIBUTE_ACCESSORS(UAuraAttributeSet, Armor);
@@ -191,7 +192,7 @@ public:
 	void OnRep_CriticalHitDamage(const FGameplayAttributeData& OldCriticalHitDamage) const;
 	
 	UFUNCTION()
-	auto OnRep_CriticalHitResistance(const FGameplayAttributeData& OldCriticalHitResistance) const -> void;
+	void OnRep_CriticalHitResistance(const FGameplayAttributeData& OldCriticalHitResistance) const;
 	
 	UFUNCTION()
 	void OnRep_HealthRegeneration(const FGameplayAttributeData& OldHealthRegeneration) const;
