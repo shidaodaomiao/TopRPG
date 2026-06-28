@@ -30,7 +30,7 @@ void AAuraEnemy::BeginPlay()
 {
 	Super::BeginPlay();
 	
-	
+	InitAbilityActorInfo();
 }
 
 void AAuraEnemy::InitAbilityActorInfo()
